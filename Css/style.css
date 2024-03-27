@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .card-container{
+        .card-row-1{
+            margin: 20px;
+            justify-content: center;
+            .card-1{
+                width: 320px;
+                height: 450px;
+                position: relative;
+                font-family:"inter", sans-serif;
+                background-color: #39005e;
+                color: white;
+                .image{
+                    overflow: hidden;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .Card-content{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #812bb78b;
+                    padding: 25px;
+                    .title{
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    .sub-title{
+                        font-size: 21px;
+                        font-weight: 700;
+                        margin-top: 25px;
+                    }
+                    /* .content{
+                        font-weight: 400;
+                        font-size: 16px;
+                        margin: 200%;
+                    } */
+                    .card-button{
+                        position: absolute;
+                        text-decoration: none;
+                        color: white;
+                        font-size: 18px;
+                        margin-right: 100px;
+                    }
+                }
+            }
+            /* .card-1 :hover .content{
+                margin-top: 25px;
+                margin-left: 0;
+                width: 100%;
+                transition: 400ms;
+            } */
+        }
+    }
+}
+
+.card-1 .Card-content .content{
+    color : #000;
+    display: hidden;
+    margin-left: 290px;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+.card-1:hover .content{
+    margin-left: 0;
+    transition: 200ms;
+}
